@@ -64,7 +64,7 @@ const game = () => {
 
     //tie
     if (playerChoice === computerChoice){
-      winner.textContent = 'It is a tie';
+      winner.textContent = 'Tie';
       return;
     }
 
