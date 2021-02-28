@@ -32,7 +32,6 @@ section {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  opacity: 0;
 }
 .intro h1 {
   font-size: 50px;
