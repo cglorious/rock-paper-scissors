@@ -25,12 +25,57 @@ const game = () => {
 
     options.forEach((option) => {
       option.addEventListener('click', function() {
+        //computer choice
         const computerNumber = Math.floor(Math.random() * 3);
         const computerChoice = computerOptions[computerNumber];
-        
+        //compare hands
+
+        //update image
+        playerHand.src = `./assets/${this.textContent}.png`
+        computerHand.src = `./assets/${computerChoice}.png`
       })
     });
 
+  }
+
+  const compareHands = (playerChoice, computerChoice) => {
+    const winner = document.querySelector('.winner')
+
+    //tie
+    if (playerChoice === computerChoice){
+      winner.textContent = 'It is a tie';
+      return;
+    }
+
+    //rock
+    if (playerChoice === 'rock'){
+      if (computerChoice === 'scissors'){
+        winner.textContent = 'Player Wins';
+      } else {
+        winner.textContent = 'Computer Wins';
+      }
+      return;
+    }
+
+    //paper
+    if (playerChoice === 'paper'){
+      if (computerChoice === 'rock'){
+        winner.textContent = 'Player Wins';
+      } else {
+        winner.textContent = 'Computer Wins';
+      }
+      return;
+    }
+
+    //scissors
+    if (playerChoice === 'scissors'){
+      if (computerChoice === 'paper'){
+        winner.textContent = 'Player Wins';
+      } else {
+        winner.textContent = 'Computer Wins';
+      }
+      return;
+    }
   }
 
   //call functions
