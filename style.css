@@ -46,6 +46,7 @@ section {
   color: rgb(224, 224, 224);
   font-size: 20px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .match{
@@ -70,4 +71,22 @@ img {
   width: 200px;
   height: 200px;
   padding: 25px;
+}
+
+.player-hand {
+  transform: rotate(110deg);
+}
+
+.computer-hand {
+  transform: rotate(210deg);
+}
+
+div.fadeOut{
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn{
+  opacity: 1;
+  pointer-events: all;
 }
