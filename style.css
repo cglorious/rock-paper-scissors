@@ -60,7 +60,7 @@ section {
 .winner{
   color: rgb(224, 224, 224);
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
 }
 .hands,
 .options {
@@ -75,15 +75,9 @@ img {
   padding: 50px;
 }
 
-/*
-.player-hand {
-  transform: rotate(110deg);
-}
-
 .computer-hand {
-  transform: rotate(210deg);
+  transform: rotateY(180deg);
 }
-*/
 
 div.fadeOut{
   opacity: 0;
@@ -127,30 +121,30 @@ div.fadeIn{
 
 @keyframes shakeComputer {
   0%{
-    transform: translateY(0px);
+    transform: rotateY(180deg) translateY(0px);
   }
   15%{
-    transform: translateY(-50px);
+    transform: rotateY(180deg) translateY(-50px);
   }
   25%{
-    transform: translateY(0px);
+    transform: rotateY(180deg) translateY(0px);
   }
   35%{
-    transform: translateY(-50px);
+    transform: rotateY(180deg) translateY(-50px);
   }
   50%{
-    transform: translateY(0px);
+    transform: rotateY(180deg) translateY(0px);
   }
   65%{
-    transform: translateY(-50px);
+    transform: rotateY(180deg) translateY(-50px);
   }
   75%{
-    transform: translateY(0px);
+    transform: rotateY(180deg) translateY(0px);
   }
   85%{
-    transform: translateY(-50px);
+    transform: rotateY(180deg) translateY(-50px);
   }
   100%{
-    transform: translateY(0px);
+    transform: rotateY(180deg) translateY(0px);
   }
 }
