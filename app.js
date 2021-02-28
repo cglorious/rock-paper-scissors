@@ -6,5 +6,16 @@ const game = () => {
     const playBtn = document.querySelector('.intro button')
     const introScreen = document.querySelector('.intro');
     const match = document.querySelector('.match');
-  }
-}
+
+    playBtn.addEventListener('click', () => {
+      introScreen.classList.add('fadeOut');
+    });
+  };
+
+  startGame();
+  //updateScore();
+
+};
+
+//start the game function
+game();
